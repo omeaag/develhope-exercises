@@ -1,0 +1,43 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+@mixin paragraph {
+  margin: 20px;
+  font-size: 1.5rem;
+  color: $color-tertiary;
+}
+
+div {
+  border: 1px solid $color-primary;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: $color-tertiary;
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  border: 1px solid $color-tertiary;
+  padding: 10px;
+}
+article:nth-child(odd) {
+  color: $color-secondary;
+}
+article:nth-child(even) {
+  color: $color-primary;
+}
+
+.paragraph {
+  margin: 15px 0;
+  border: 1px solid $color-secondary;
+}
+
+.paragraph p {
+  @include paragraph;
+}

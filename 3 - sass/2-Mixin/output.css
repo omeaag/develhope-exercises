@@ -1,0 +1,40 @@
+div {
+  border: 1px solid red;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+article:nth-child(odd) {
+  color: blue;
+}
+
+article:nth-child(even) {
+  color: red;
+}
+
+.paragraph {
+  margin: 15px 0;
+  border: 1px solid blue;
+}
+
+.paragraph p {
+  margin: 20px;
+  font-size: 1.5rem;
+  color: green;
+}
+
+/*# sourceMappingURL=output.css.map */
